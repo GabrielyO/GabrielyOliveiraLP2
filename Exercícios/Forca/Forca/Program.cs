@@ -14,7 +14,7 @@ namespace Forca
             char letra;
             char[] mostrar = new char[20];
             int maxErros = 0;
-            bool ganhou = false, chuteCerto = false;
+            bool ganhou = false, chuteCerto = false ;
 
             palavra = Console.ReadLine();
             Console.Clear();
@@ -23,7 +23,6 @@ namespace Forca
                 mostrar[i] = '-';
                 Console.Write(" " + mostrar[i] + " ");                
             }
-
             while ( maxErros < 7 && !ganhou)
             {
                 letra = char.Parse(Console.ReadLine());
@@ -33,6 +32,7 @@ namespace Forca
                         mostrar[k] = letra;
                     if (letra == '*')
                     {
+                        Console.WriteLine("Você tem direito à apenas um chute");
                         chute = Console.ReadLine();
                         if (chute == palavra)
                         {
@@ -41,17 +41,21 @@ namespace Forca
                             break;
                         }                            
                         else
+                        {
                             ganhou = false;
+                            maxErros = 7;
+                            break;
+                        }                            
                     }
                 }
                 if (chuteCerto == true)
                     break;
                 maxErros++;
-
-                for (int i = 0; i < palavra.Length; i++)
-                {
-                    Console.Write(" " + mostrar[i] + " ");                   
-                }
+                Console.Clear();
+                if ( maxErros < 7 )
+                    for (int i = 0; i < palavra.Length; i++)
+                        Console.Write(" " + mostrar[i] + " ");
+             
                 for (int i = 0; i < palavra.Length; i++)
                 {
                     if (mostrar[i] == '-')
@@ -59,11 +63,10 @@ namespace Forca
                         ganhou = false;
                         break;
                     }
-
                     else
                         ganhou = true;
                 }                    
-            }            
+            }           
 
             if (ganhou == true)
                 Console.WriteLine("Você ganhou");
