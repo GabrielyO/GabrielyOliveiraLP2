@@ -1,0 +1,15 @@
+08/06/16
+
+LER CARACTÉR POR CARACTÉR -- PROGRAMA CHAVES
+
+while(scanf("%c",&c) == 1)
+{
+ //leitura de caractéres
+}
+
+LEITURA ATÉ CERTO PONTO -- PROGRAMA CHAVES
+
+scanf("%[^\n]\n", linha);
+
+PROGRAMA SACI
+
