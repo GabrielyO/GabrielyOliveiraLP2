@@ -21,13 +21,7 @@ namespace ConsoleApplication1
                 c.Modelo = Console.ReadLine();
                 carros.Add(c);
             }
-
-            for (int i = 0; i < n; i++)
-            {
-                Console.WriteLine(carros);
-            }
-
-                
+              
                                                                                                                                                                         
         }
     }
