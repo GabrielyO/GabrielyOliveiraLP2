@@ -12,6 +12,7 @@ namespace ConsoleApplication1
         {
             int n = int.Parse(Console.ReadLine());
             List <Carro> carros = new List<Carro>();
+            string placaAux;
             
             for (int i = 0; i < n; i++)
             {
@@ -21,6 +22,19 @@ namespace ConsoleApplication1
                 c.Modelo = Console.ReadLine();
                 carros.Add(c);
             }
+
+            Console.WriteLine("Digite uma PLACA");
+            placaAux = Console.ReadLine();
+
+            for (int i = 0; i < n; i++)
+            {
+                if (placaAux == carros[i].Placa)
+                {
+                    Console.WriteLine(carros[i].Placa + " " + carros[i].Ano + " " + carros[i].Modelo);
+                    break;
+                }
+            }
+
               
                                                                                                                                                                         
         }
