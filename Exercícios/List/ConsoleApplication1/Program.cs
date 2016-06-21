@@ -13,28 +13,41 @@ namespace ConsoleApplication1
             int n = int.Parse(Console.ReadLine());
             List <Carro> carros = new List<Carro>();
             string placaAux;
+            bool achou = false;
+            int i = 0;
             
-            for (int i = 0; i < n; i++)
+            for (i = 0; i < n; i++)
             {
                 Carro c = new Carro();
                 c.Placa = Console.ReadLine();
                 c.Ano = int.Parse(Console.ReadLine());
-                c.Modelo = Console.ReadLine();
+                c.Modelo = Console.ReadLine();                 
                 carros.Add(c);
             }
+            Console.Clear();
 
             Console.WriteLine("Digite uma PLACA");
             placaAux = Console.ReadLine();
-
-            for (int i = 0; i < n; i++)
+            Console.Clear();
+            
+            for (i = 0; i < n; i++)
             {
                 if (placaAux == carros[i].Placa)
                 {
-                    Console.WriteLine(carros[i].Placa + " " + carros[i].Ano + " " + carros[i].Modelo);
+                    achou = true;
                     break;
                 }
+                else
+                    achou = false;   
             }
-
+            if (achou == true)
+            {
+                Console.WriteLine("Placa = " + carros[i].Placa);
+                Console.WriteLine("Ano = " + carros[i].Ano);
+                Console.WriteLine("Modelo = " + carros[i].Modelo);
+            }
+            else
+                Console.WriteLine("Placa não encontrada");
               
                                                                                                                                                                         
         }
