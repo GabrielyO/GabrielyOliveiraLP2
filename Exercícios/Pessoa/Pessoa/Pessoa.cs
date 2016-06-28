@@ -24,6 +24,11 @@ namespace Pessoa
         {
             this.cpf = cpf;
         }
+        public Pessoa (string nome, string cpf)
+        {
+            this.nome = nome;
+            this.cpf = cpf;
+        }
 
     }
 }
