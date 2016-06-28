@@ -11,7 +11,6 @@ namespace Pessoa
         static void Main(string[] args)
         {
             new Pessoa();
-            new Pessoa("Thamires", "Mendes");
             new Pessoa("0358243770");
         }
     }
