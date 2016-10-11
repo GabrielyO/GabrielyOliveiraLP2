@@ -27,9 +27,11 @@ CREATE TABLE IF NOT EXISTS `aluno` (
 -- Copiando dados para a tabela caderno.aluno: ~5 rows (aproximadamente)
 /*!40000 ALTER TABLE `aluno` DISABLE KEYS */;
 INSERT INTO `aluno` (`ID`, `NOMECOMPLETO`, `LOGIN`, `SENHA`) VALUES
+	(2, 'Bruna Figueiredo de Jesus', 'bruninha', 'bruna'),
 	(10, 'Gabriely de oliveira Nascimento', 'gabybicho', '040400'),
 	(13, 'Lucas Barcelos Barros', 'barcelos', '270200'),
 	(14, 'Lucas Bulhões Lopes', 'bulhoes', '010102'),
+	(19, 'Paula Vasconcelos Dutra', 'paulinha', 'paula'),
 	(22, 'Thamires Mendes de Lima', 'mlthami', '040200'),
 	(23, 'Thiago Nascimento Maia', 'thiagomaia', '140799');
 /*!40000 ALTER TABLE `aluno` ENABLE KEYS */;
@@ -70,14 +72,25 @@ CREATE TABLE IF NOT EXISTS `monitoria` (
   PRIMARY KEY (`ID`),
   KEY `ID_ALUNO` (`ID_ALUNO`),
   KEY `ID_MATÉRIA` (`ID_MATERIA`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
 
 -- Copiando dados para a tabela caderno.monitoria: ~3 rows (aproximadamente)
 /*!40000 ALTER TABLE `monitoria` DISABLE KEYS */;
 INSERT INTO `monitoria` (`ID`, `ID_MATERIA`, `ID_ALUNO`) VALUES
-	(1, 1, 10),
-	(2, 1, 22),
-	(3, 6, 14);
+	(1, 1, 2),
+	(2, 2, 2),
+	(3, 3, 2),
+	(4, 4, 2),
+	(5, 5, 2),
+	(6, 6, 2),
+	(7, 7, 2),
+	(8, 8, 2),
+	(9, 9, 2),
+	(10, 10, 2),
+	(11, 11, 2),
+	(12, 12, 2),
+	(13, 13, 2),
+	(14, 14, 2);
 /*!40000 ALTER TABLE `monitoria` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
