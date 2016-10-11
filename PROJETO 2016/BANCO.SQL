@@ -24,16 +24,33 @@ CREATE TABLE IF NOT EXISTS `aluno` (
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Copiando dados para a tabela caderno.aluno: ~5 rows (aproximadamente)
+-- Copiando dados para a tabela caderno.aluno: ~24 rows (aproximadamente)
 /*!40000 ALTER TABLE `aluno` DISABLE KEYS */;
 INSERT INTO `aluno` (`ID`, `NOMECOMPLETO`, `LOGIN`, `SENHA`) VALUES
+	(1, 'André Lucas', 'andre', 'andre'),
 	(2, 'Bruna Figueiredo de Jesus', 'bruninha', 'bruna'),
-	(10, 'Gabriely de oliveira Nascimento', 'gabybicho', '040400'),
-	(13, 'Lucas Barcelos Barros', 'barcelos', '270200'),
-	(14, 'Lucas Bulhões Lopes', 'bulhoes', '010102'),
+	(3, 'Carlos Linhares', 'carlos', 'carlos'),
+	(4, 'Crhistian', 'crhistian', 'crhistian'),
+	(5, 'Davi Dias', 'dias', 'dias'),
+	(6, 'Davi Santos', 'santos', 'santos'),
+	(7, 'Dhiogo', 'dhiogo', 'dhiogo'),
+	(8, 'Eduardo', 'eduardo', 'eduardo'),
+	(9, 'Felipe Reis', 'felipe', 'felipe'),
+	(10, 'Gabriely de oliveira Nascimento', 'gabybicho', 'gabriely'),
+	(11, 'Leonardo', 'leonardo', 'leonardo'),
+	(12, 'Lucas Alves', 'alves', 'alves'),
+	(13, 'Lucas Barcelos Barros', 'barcelos', 'barcelos'),
+	(14, 'Lucas Bulhões Lopes', 'bulhoes', 'lopes'),
+	(15, 'Lucas Reis', 'reis', 'reis'),
+	(16, 'Marcos Paulo', 'marcos', 'marcos'),
+	(17, 'Marcus Vinicius', 'marcus', 'marcus'),
+	(18, 'Nathalia', 'nathalia', 'nathalia'),
 	(19, 'Paula Vasconcelos Dutra', 'paulinha', 'paula'),
-	(22, 'Thamires Mendes de Lima', 'mlthami', '040200'),
-	(23, 'Thiago Nascimento Maia', 'thiagomaia', '140799');
+	(20, 'Pedro Henrique', 'pedro', 'pedro'),
+	(21, 'Rodrigo Jucá', 'rodrigo', 'rodrigo'),
+	(22, 'Thamires Mendes de Lima', 'mlthami', 'thamires'),
+	(23, 'Thiago Nascimento Maia', 'thiagomaia', 'thiago'),
+	(24, 'Ursula Rosa', 'ursula', 'ursula');
 /*!40000 ALTER TABLE `aluno` ENABLE KEYS */;
 
 
@@ -74,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `monitoria` (
   KEY `ID_MATÉRIA` (`ID_MATERIA`)
 ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
 
--- Copiando dados para a tabela caderno.monitoria: ~3 rows (aproximadamente)
+-- Copiando dados para a tabela caderno.monitoria: ~28 rows (aproximadamente)
 /*!40000 ALTER TABLE `monitoria` DISABLE KEYS */;
 INSERT INTO `monitoria` (`ID`, `ID_MATERIA`, `ID_ALUNO`) VALUES
 	(1, 1, 2),
@@ -90,7 +107,21 @@ INSERT INTO `monitoria` (`ID`, `ID_MATERIA`, `ID_ALUNO`) VALUES
 	(11, 11, 2),
 	(12, 12, 2),
 	(13, 13, 2),
-	(14, 14, 2);
+	(14, 14, 2),
+	(15, 1, 19),
+	(16, 2, 19),
+	(17, 3, 19),
+	(18, 4, 19),
+	(19, 5, 19),
+	(20, 6, 19),
+	(21, 7, 19),
+	(22, 8, 19),
+	(23, 9, 19),
+	(24, 10, 19),
+	(25, 11, 19),
+	(26, 12, 19),
+	(27, 13, 19),
+	(28, 14, 19);
 /*!40000 ALTER TABLE `monitoria` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
