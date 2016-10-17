@@ -21,5 +21,28 @@ namespace CADERNO
         {
 
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void toolsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SAIR_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            login login = new login();
+            login.ShowDialog();          
+            
+        }
     }
 }

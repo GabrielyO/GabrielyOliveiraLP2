@@ -21,15 +21,5 @@ namespace CADERNO
         {
             conn.Close();
         }
-
-  
-
-        
-
-
-
-
-
-
     }
 }
