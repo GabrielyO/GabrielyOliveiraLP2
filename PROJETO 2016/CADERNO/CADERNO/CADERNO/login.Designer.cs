@@ -45,7 +45,7 @@
             this.txtaluno.AccessibleName = "login";
             this.txtaluno.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtaluno.Location = new System.Drawing.Point(138, 148);
-            this.txtaluno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtaluno.Margin = new System.Windows.Forms.Padding(4);
             this.txtaluno.Name = "txtaluno";
             this.txtaluno.Size = new System.Drawing.Size(228, 26);
             this.txtaluno.TabIndex = 0;
@@ -56,7 +56,7 @@
             this.txtsenha.AccessibleName = "senha";
             this.txtsenha.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsenha.Location = new System.Drawing.Point(138, 203);
-            this.txtsenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtsenha.Margin = new System.Windows.Forms.Padding(4);
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.Size = new System.Drawing.Size(228, 26);
             this.txtsenha.TabIndex = 1;
@@ -109,7 +109,7 @@
             this.ENTER.Font = new System.Drawing.Font("BatangChe", 15F, System.Drawing.FontStyle.Bold);
             this.ENTER.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.ENTER.Location = new System.Drawing.Point(200, 238);
-            this.ENTER.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ENTER.Margin = new System.Windows.Forms.Padding(4);
             this.ENTER.Name = "ENTER";
             this.ENTER.Size = new System.Drawing.Size(117, 51);
             this.ENTER.TabIndex = 5;
@@ -130,9 +130,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Location = new System.Drawing.Point(495, 199);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(398, 352);
+            this.panel1.Size = new System.Drawing.Size(855, 352);
             this.panel1.TabIndex = 6;
             // 
             // label4
@@ -156,11 +156,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(893, 486);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Script MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "login";
             this.Text = "TELA DE LOGIN";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
