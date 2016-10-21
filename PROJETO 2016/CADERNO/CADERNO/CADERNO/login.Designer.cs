@@ -1,6 +1,6 @@
 ﻿namespace CADERNO
 {
-    partial class Form1
+    partial class login
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
+            this.txtaluno = new System.Windows.Forms.TextBox();
+            this.txtsenha = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,29 +40,34 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtaluno
             // 
-            this.textBox1.AccessibleName = "login";
-            this.textBox1.Location = new System.Drawing.Point(92, 101);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtaluno.AccessibleName = "login";
+            this.txtaluno.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtaluno.Location = new System.Drawing.Point(138, 148);
+            this.txtaluno.Margin = new System.Windows.Forms.Padding(4);
+            this.txtaluno.Name = "txtaluno";
+            this.txtaluno.Size = new System.Drawing.Size(228, 26);
+            this.txtaluno.TabIndex = 0;
+            this.txtaluno.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtsenha
             // 
-            this.textBox2.AccessibleName = "senha";
-            this.textBox2.Location = new System.Drawing.Point(120, 139);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtsenha.AccessibleName = "senha";
+            this.txtsenha.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsenha.Location = new System.Drawing.Point(138, 203);
+            this.txtsenha.Margin = new System.Windows.Forms.Padding(4);
+            this.txtsenha.Name = "txtsenha";
+            this.txtsenha.Size = new System.Drawing.Size(228, 26);
+            this.txtsenha.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("BatangChe", 50F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(55, 9);
+            this.label1.Location = new System.Drawing.Point(154, 35);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(199, 67);
             this.label1.TabIndex = 2;
@@ -74,7 +79,8 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("BatangChe", 15F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(19, 101);
+            this.label2.Location = new System.Drawing.Point(72, 149);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 20);
             this.label2.TabIndex = 3;
@@ -85,7 +91,8 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("BatangChe", 15F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Location = new System.Drawing.Point(3, 139);
+            this.label3.Location = new System.Drawing.Point(28, 204);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 20);
             this.label3.TabIndex = 4;
@@ -101,27 +108,31 @@
             this.ENTER.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ENTER.Font = new System.Drawing.Font("BatangChe", 15F, System.Drawing.FontStyle.Bold);
             this.ENTER.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ENTER.Location = new System.Drawing.Point(111, 186);
+            this.ENTER.Location = new System.Drawing.Point(200, 238);
+            this.ENTER.Margin = new System.Windows.Forms.Padding(4);
             this.ENTER.Name = "ENTER";
-            this.ENTER.Size = new System.Drawing.Size(78, 35);
+            this.ENTER.Size = new System.Drawing.Size(117, 51);
             this.ENTER.TabIndex = 5;
             this.ENTER.Text = "ENTER";
             this.ENTER.UseVisualStyleBackColor = false;
+            this.ENTER.Click += new System.EventHandler(this.ENTER_Click);
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.ENTER);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtaluno);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtsenha);
             this.panel1.Controls.Add(this.label2);
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Location = new System.Drawing.Point(530, 252);
+            this.panel1.Location = new System.Drawing.Point(495, 199);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(265, 241);
+            this.panel1.Size = new System.Drawing.Size(855, 352);
             this.panel1.TabIndex = 6;
             // 
             // label4
@@ -130,25 +141,28 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Buxton Sketch", 75F);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 75F);
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label4.Location = new System.Drawing.Point(366, 36);
+            this.label4.Location = new System.Drawing.Point(280, 55);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(727, 123);
+            this.label4.Size = new System.Drawing.Size(998, 113);
             this.label4.TabIndex = 0;
             this.label4.Text = "CADERNO VIRTUAL";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Form1
+            // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1323, 804);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Font = new System.Drawing.Font("Script MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "login";
+            this.Text = "TELA DE LOGIN";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
@@ -160,8 +174,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtaluno;
+        private System.Windows.Forms.TextBox txtsenha;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
