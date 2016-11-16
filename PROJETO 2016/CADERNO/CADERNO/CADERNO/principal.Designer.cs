@@ -237,10 +237,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.menuPrincipal);
             this.Font = new System.Drawing.Font("Script MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
+=======
+            this.ClientSize = new System.Drawing.Size(940, 498);
+            this.Font = new System.Drawing.Font("Script MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> f252dbd17a20b932897f82ec8e26204a9279cf8a
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "principal";
             this.Text = "MENU PRINCIPAL";
