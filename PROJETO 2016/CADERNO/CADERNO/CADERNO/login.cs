@@ -54,7 +54,8 @@ namespace CADERNO
             if (dr.Read())
             {
                 Autenticacao.login(dr["LOGIN"].ToString(), dr["SENHA"].ToString());
-                principal principal = new principal();                
+                principal principal = new principal();
+                this.Visible = false;               
                 principal.ShowDialog();
             }
             else

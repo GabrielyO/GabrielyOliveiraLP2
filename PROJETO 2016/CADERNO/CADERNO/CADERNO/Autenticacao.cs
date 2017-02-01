@@ -16,5 +16,6 @@ namespace CADERNO
             nome = nome1;
             senha = senha1;
         }
+        public static void limpar() { nome = null; senha = null; }
     }
 }
