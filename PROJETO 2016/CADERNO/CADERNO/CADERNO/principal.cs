@@ -52,7 +52,6 @@ namespace CADERNO
 
         private void MATEMÁTICA_Click(object sender, EventArgs e)
         {
-            panelmat.Visible = true;
             paneling.Visible = false;
             panelpor.Visible = false;
             panelfis.Visible = false;
@@ -64,12 +63,12 @@ namespace CADERNO
             panelhis.Visible = false;
             panelgeo.Visible = false;
             paneldes.Visible = false;
+            panelmat.Visible = true;
         }
 
         private void INGLÊS_Click(object sender, EventArgs e)
         {
-            panelmat.Visible = false;
-            paneling.Visible = true;
+            panelmat.Visible = false;            
             panelpor.Visible = false;
             panelfis.Visible = false;
             panelqui.Visible = false;
@@ -79,14 +78,14 @@ namespace CADERNO
             paneledf.Visible = false;
             panelhis.Visible = false;
             panelgeo.Visible = false;
-            paneldes.Visible = false;                        
+            paneldes.Visible = false;
+            paneling.Visible = true;
         }
 
         private void PORTUGUÊS_Click(object sender, EventArgs e)
         {
             panelmat.Visible = false;
-            paneling.Visible = false;
-            panelpor.Visible = true;
+            paneling.Visible = false;           
             panelfis.Visible = false;
             panelqui.Visible = false;
             panelsoc.Visible = false;
@@ -96,6 +95,7 @@ namespace CADERNO
             panelhis.Visible = false;
             panelgeo.Visible = false;
             paneldes.Visible = false;
+            panelpor.Visible = true;
         }
 
         private void FÍSICA_Click(object sender, EventArgs e)
@@ -103,7 +103,6 @@ namespace CADERNO
             panelmat.Visible = false;
             paneling.Visible = false;
             panelpor.Visible = false;
-            panelfis.Visible = true;
             panelqui.Visible = false;
             panelsoc.Visible = false;
             panelfil.Visible = false;
@@ -112,6 +111,7 @@ namespace CADERNO
             panelhis.Visible = false;
             panelgeo.Visible = false;
             paneldes.Visible = false;
+            panelfis.Visible = true;
         }
 
         private void QUÍMICA_Click(object sender, EventArgs e)
@@ -119,8 +119,7 @@ namespace CADERNO
             panelmat.Visible = false;
             paneling.Visible = false;
             panelpor.Visible = false;
-            panelfis.Visible = false;
-            panelqui.Visible = true;
+            panelfis.Visible = false;            
             panelsoc.Visible = false;
             panelfil.Visible = false;
             panelbio.Visible = false;
@@ -128,6 +127,7 @@ namespace CADERNO
             panelhis.Visible = false;
             panelgeo.Visible = false;
             paneldes.Visible = false;
+            panelqui.Visible = true;
         }
 
         private void SOCIOLOGIA_Click(object sender, EventArgs e)
@@ -136,14 +136,14 @@ namespace CADERNO
             paneling.Visible = false;
             panelpor.Visible = false;
             panelfis.Visible = false;
-            panelqui.Visible = false;
-            panelsoc.Visible = true;
+            panelqui.Visible = false;            
             panelfil.Visible = false;
             panelbio.Visible = false;
             paneledf.Visible = false;
             panelhis.Visible = false;
             panelgeo.Visible = false;
             paneldes.Visible = false;
+            panelsoc.Visible = true;
         }
 
         private void FILOSOFIA_Click(object sender, EventArgs e)
@@ -153,13 +153,13 @@ namespace CADERNO
             panelpor.Visible = false;
             panelfis.Visible = false;
             panelqui.Visible = false;
-            panelsoc.Visible = false;
-            panelfil.Visible = true;
+            panelsoc.Visible = false;            
             panelbio.Visible = false;
             paneledf.Visible = false;
             panelhis.Visible = false;
             panelgeo.Visible = false;
             paneldes.Visible = false;
+            panelfil.Visible = true;
         }
 
         private void BIOLOGIA_Click(object sender, EventArgs e)
@@ -170,12 +170,12 @@ namespace CADERNO
             panelfis.Visible = false;
             panelqui.Visible = false;
             panelsoc.Visible = false;
-            panelfil.Visible = false;
-            panelbio.Visible = true;
+            panelfil.Visible = false;            
             paneledf.Visible = false;
             panelhis.Visible = false;
             panelgeo.Visible = false;
             paneldes.Visible = false;
+            panelbio.Visible = true;
         }
 
         private void ED_FÍSICA_Click(object sender, EventArgs e)
@@ -187,11 +187,11 @@ namespace CADERNO
             panelqui.Visible = false;
             panelsoc.Visible = false;
             panelfil.Visible = false;
-            panelbio.Visible = false;
-            paneledf.Visible = true;
+            panelbio.Visible = false;            
             panelhis.Visible = false;
             panelgeo.Visible = false;
             paneldes.Visible = false;
+            paneledf.Visible = true;
         }
 
         private void HISTÓRIA_Click(object sender, EventArgs e)
@@ -204,10 +204,10 @@ namespace CADERNO
             panelsoc.Visible = false;
             panelfil.Visible = false;
             panelbio.Visible = false;
-            paneledf.Visible = false;
-            panelhis.Visible = true;
+            paneledf.Visible = false;            
             panelgeo.Visible = false;
             paneldes.Visible = false;
+            panelhis.Visible = true;
         }
 
         private void GEOGRAFIA_Click(object sender, EventArgs e)
@@ -221,9 +221,9 @@ namespace CADERNO
             panelfil.Visible = false;
             panelbio.Visible = false;
             paneledf.Visible = false;
-            panelhis.Visible = false;
-            panelgeo.Visible = true;
+            panelhis.Visible = false;            
             paneldes.Visible = false;
+            panelgeo.Visible = true;
         }
 
         private void DESENHO_Click(object sender, EventArgs e)
@@ -244,7 +244,15 @@ namespace CADERNO
 
         private void mat1_Click(object sender, EventArgs e)
         {
-
+            panelmat2.Visible = false;
+            panelmat1.Visible = true;
         }
+
+        private void mat2_Click(object sender, EventArgs e)
+        {
+            panelmat1.Visible = false;
+            panelmat2.Visible = true;
+        }
+               
     }
 }
