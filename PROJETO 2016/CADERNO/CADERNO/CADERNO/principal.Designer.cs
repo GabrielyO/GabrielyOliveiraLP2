@@ -53,6 +53,12 @@ namespace CADERNO
             this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
             this.b1 = new System.Windows.Forms.Button();
             this.panelmat = new System.Windows.Forms.Panel();
+            this.panelmat1 = new System.Windows.Forms.Panel();
+            this.RAIO = new System.Windows.Forms.Button();
+            this.CIRCUNFERENCIA = new System.Windows.Forms.Button();
+            this.panelmat2 = new System.Windows.Forms.Panel();
+            this.FEXPONENCIAL = new System.Windows.Forms.Button();
+            this.ESTATISTICA = new System.Windows.Forms.Button();
             this.mat3 = new System.Windows.Forms.Button();
             this.mat2 = new System.Windows.Forms.Button();
             this.mat1 = new System.Windows.Forms.Button();
@@ -102,6 +108,8 @@ namespace CADERNO
             this.des1 = new System.Windows.Forms.Button();
             this.menuPrincipal.SuspendLayout();
             this.panelmat.SuspendLayout();
+            this.panelmat1.SuspendLayout();
+            this.panelmat2.SuspendLayout();
             this.paneling.SuspendLayout();
             this.panelpor.SuspendLayout();
             this.panelfis.SuspendLayout();
@@ -139,7 +147,7 @@ namespace CADERNO
             this.menuPrincipal.Name = "menuPrincipal";
             this.menuPrincipal.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.menuPrincipal.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuPrincipal.Size = new System.Drawing.Size(1584, 59);
+            this.menuPrincipal.Size = new System.Drawing.Size(1604, 59);
             this.menuPrincipal.TabIndex = 0;
             this.menuPrincipal.Text = "menuPrincipal";
             this.menuPrincipal.AutoSizeChanged += new System.EventHandler(this.principal_Load);
@@ -318,15 +326,97 @@ namespace CADERNO
             // panelmat
             // 
             this.panelmat.BackColor = System.Drawing.Color.Transparent;
+            this.panelmat.Controls.Add(this.panelmat1);
+            this.panelmat.Controls.Add(this.panelmat2);
             this.panelmat.Controls.Add(this.mat3);
             this.panelmat.Controls.Add(this.mat2);
             this.panelmat.Controls.Add(this.mat1);
-            this.panelmat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelmat.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelmat.Location = new System.Drawing.Point(0, 59);
             this.panelmat.Name = "panelmat";
-            this.panelmat.Size = new System.Drawing.Size(1584, 803);
+            this.panelmat.Size = new System.Drawing.Size(585, 823);
             this.panelmat.TabIndex = 3;
             this.panelmat.Visible = false;
+            // 
+            // panelmat1
+            // 
+            this.panelmat1.Controls.Add(this.RAIO);
+            this.panelmat1.Controls.Add(this.CIRCUNFERENCIA);
+            this.panelmat1.Location = new System.Drawing.Point(12, 62);
+            this.panelmat1.Name = "panelmat1";
+            this.panelmat1.Size = new System.Drawing.Size(185, 539);
+            this.panelmat1.TabIndex = 6;
+            this.panelmat1.Visible = false;
+            // 
+            // RAIO
+            // 
+            this.RAIO.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.RAIO.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.RAIO.FlatAppearance.BorderSize = 0;
+            this.RAIO.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.RAIO.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RAIO.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.RAIO.Location = new System.Drawing.Point(-2, 57);
+            this.RAIO.Name = "RAIO";
+            this.RAIO.Size = new System.Drawing.Size(185, 44);
+            this.RAIO.TabIndex = 4;
+            this.RAIO.Text = "RAIO";
+            this.RAIO.UseVisualStyleBackColor = false;
+            // 
+            // CIRCUNFERENCIA
+            // 
+            this.CIRCUNFERENCIA.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.CIRCUNFERENCIA.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CIRCUNFERENCIA.FlatAppearance.BorderSize = 0;
+            this.CIRCUNFERENCIA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CIRCUNFERENCIA.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CIRCUNFERENCIA.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.CIRCUNFERENCIA.Location = new System.Drawing.Point(-2, 7);
+            this.CIRCUNFERENCIA.Name = "CIRCUNFERENCIA";
+            this.CIRCUNFERENCIA.Size = new System.Drawing.Size(185, 44);
+            this.CIRCUNFERENCIA.TabIndex = 3;
+            this.CIRCUNFERENCIA.Text = "CIRCUNFERÊNCIA";
+            this.CIRCUNFERENCIA.UseVisualStyleBackColor = false;
+            // 
+            // panelmat2
+            // 
+            this.panelmat2.Controls.Add(this.FEXPONENCIAL);
+            this.panelmat2.Controls.Add(this.ESTATISTICA);
+            this.panelmat2.Location = new System.Drawing.Point(203, 62);
+            this.panelmat2.Name = "panelmat2";
+            this.panelmat2.Size = new System.Drawing.Size(185, 539);
+            this.panelmat2.TabIndex = 5;
+            this.panelmat2.Visible = false;
+            // 
+            // FEXPONENCIAL
+            // 
+            this.FEXPONENCIAL.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.FEXPONENCIAL.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.FEXPONENCIAL.FlatAppearance.BorderSize = 0;
+            this.FEXPONENCIAL.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.FEXPONENCIAL.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FEXPONENCIAL.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.FEXPONENCIAL.Location = new System.Drawing.Point(-2, 57);
+            this.FEXPONENCIAL.Name = "FEXPONENCIAL";
+            this.FEXPONENCIAL.Size = new System.Drawing.Size(185, 44);
+            this.FEXPONENCIAL.TabIndex = 4;
+            this.FEXPONENCIAL.Text = "F. EXPONENCIAL";
+            this.FEXPONENCIAL.UseVisualStyleBackColor = false;
+            // 
+            // ESTATISTICA
+            // 
+            this.ESTATISTICA.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ESTATISTICA.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ESTATISTICA.FlatAppearance.BorderSize = 0;
+            this.ESTATISTICA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ESTATISTICA.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ESTATISTICA.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.ESTATISTICA.Location = new System.Drawing.Point(-2, 7);
+            this.ESTATISTICA.Name = "ESTATISTICA";
+            this.ESTATISTICA.Size = new System.Drawing.Size(185, 44);
+            this.ESTATISTICA.TabIndex = 3;
+            this.ESTATISTICA.Text = "ESTATÍSTICA";
+            this.ESTATISTICA.UseVisualStyleBackColor = false;
             // 
             // mat3
             // 
@@ -336,7 +426,7 @@ namespace CADERNO
             this.mat3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.mat3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mat3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.mat3.Location = new System.Drawing.Point(888, 12);
+            this.mat3.Location = new System.Drawing.Point(394, 12);
             this.mat3.Name = "mat3";
             this.mat3.Size = new System.Drawing.Size(185, 44);
             this.mat3.TabIndex = 2;
@@ -351,12 +441,13 @@ namespace CADERNO
             this.mat2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.mat2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mat2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.mat2.Location = new System.Drawing.Point(697, 12);
+            this.mat2.Location = new System.Drawing.Point(203, 12);
             this.mat2.Name = "mat2";
             this.mat2.Size = new System.Drawing.Size(185, 44);
             this.mat2.TabIndex = 1;
             this.mat2.Text = "2° ano MATEMÁTICA";
             this.mat2.UseVisualStyleBackColor = false;
+            this.mat2.Click += new System.EventHandler(this.mat2_Click);
             // 
             // mat1
             // 
@@ -366,7 +457,7 @@ namespace CADERNO
             this.mat1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.mat1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mat1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.mat1.Location = new System.Drawing.Point(506, 12);
+            this.mat1.Location = new System.Drawing.Point(12, 12);
             this.mat1.Name = "mat1";
             this.mat1.Size = new System.Drawing.Size(185, 44);
             this.mat1.TabIndex = 0;
@@ -380,10 +471,10 @@ namespace CADERNO
             this.paneling.Controls.Add(this.ing3);
             this.paneling.Controls.Add(this.ing2);
             this.paneling.Controls.Add(this.ing1);
-            this.paneling.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.paneling.Location = new System.Drawing.Point(0, 59);
+            this.paneling.Dock = System.Windows.Forms.DockStyle.Left;
+            this.paneling.Location = new System.Drawing.Point(585, 59);
             this.paneling.Name = "paneling";
-            this.paneling.Size = new System.Drawing.Size(1584, 803);
+            this.paneling.Size = new System.Drawing.Size(585, 823);
             this.paneling.TabIndex = 4;
             this.paneling.Visible = false;
             // 
@@ -395,7 +486,7 @@ namespace CADERNO
             this.ing3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ing3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ing3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.ing3.Location = new System.Drawing.Point(888, 12);
+            this.ing3.Location = new System.Drawing.Point(394, 12);
             this.ing3.Name = "ing3";
             this.ing3.Size = new System.Drawing.Size(185, 44);
             this.ing3.TabIndex = 2;
@@ -410,7 +501,7 @@ namespace CADERNO
             this.ing2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ing2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ing2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.ing2.Location = new System.Drawing.Point(697, 12);
+            this.ing2.Location = new System.Drawing.Point(203, 12);
             this.ing2.Name = "ing2";
             this.ing2.Size = new System.Drawing.Size(185, 44);
             this.ing2.TabIndex = 1;
@@ -425,7 +516,7 @@ namespace CADERNO
             this.ing1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ing1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ing1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.ing1.Location = new System.Drawing.Point(506, 12);
+            this.ing1.Location = new System.Drawing.Point(12, 12);
             this.ing1.Name = "ing1";
             this.ing1.Size = new System.Drawing.Size(185, 44);
             this.ing1.TabIndex = 0;
@@ -438,10 +529,10 @@ namespace CADERNO
             this.panelpor.Controls.Add(this.por3);
             this.panelpor.Controls.Add(this.por2);
             this.panelpor.Controls.Add(this.por1);
-            this.panelpor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelpor.Location = new System.Drawing.Point(0, 59);
+            this.panelpor.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelpor.Location = new System.Drawing.Point(1170, 59);
             this.panelpor.Name = "panelpor";
-            this.panelpor.Size = new System.Drawing.Size(1584, 803);
+            this.panelpor.Size = new System.Drawing.Size(585, 823);
             this.panelpor.TabIndex = 5;
             this.panelpor.Visible = false;
             // 
@@ -453,7 +544,7 @@ namespace CADERNO
             this.por3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.por3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.por3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.por3.Location = new System.Drawing.Point(888, 12);
+            this.por3.Location = new System.Drawing.Point(394, 12);
             this.por3.Name = "por3";
             this.por3.Size = new System.Drawing.Size(185, 44);
             this.por3.TabIndex = 2;
@@ -468,7 +559,7 @@ namespace CADERNO
             this.por2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.por2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.por2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.por2.Location = new System.Drawing.Point(697, 12);
+            this.por2.Location = new System.Drawing.Point(203, 12);
             this.por2.Name = "por2";
             this.por2.Size = new System.Drawing.Size(185, 44);
             this.por2.TabIndex = 1;
@@ -483,7 +574,7 @@ namespace CADERNO
             this.por1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.por1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.por1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.por1.Location = new System.Drawing.Point(506, 12);
+            this.por1.Location = new System.Drawing.Point(12, 12);
             this.por1.Name = "por1";
             this.por1.Size = new System.Drawing.Size(185, 44);
             this.por1.TabIndex = 0;
@@ -496,10 +587,10 @@ namespace CADERNO
             this.panelfis.Controls.Add(this.fis3);
             this.panelfis.Controls.Add(this.fis2);
             this.panelfis.Controls.Add(this.fis1);
-            this.panelfis.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelfis.Location = new System.Drawing.Point(0, 59);
+            this.panelfis.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelfis.Location = new System.Drawing.Point(1755, 59);
             this.panelfis.Name = "panelfis";
-            this.panelfis.Size = new System.Drawing.Size(1584, 803);
+            this.panelfis.Size = new System.Drawing.Size(585, 823);
             this.panelfis.TabIndex = 6;
             this.panelfis.Visible = false;
             // 
@@ -511,7 +602,7 @@ namespace CADERNO
             this.fis3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.fis3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fis3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.fis3.Location = new System.Drawing.Point(888, 12);
+            this.fis3.Location = new System.Drawing.Point(394, 12);
             this.fis3.Name = "fis3";
             this.fis3.Size = new System.Drawing.Size(185, 44);
             this.fis3.TabIndex = 2;
@@ -526,7 +617,7 @@ namespace CADERNO
             this.fis2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.fis2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fis2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.fis2.Location = new System.Drawing.Point(697, 12);
+            this.fis2.Location = new System.Drawing.Point(203, 12);
             this.fis2.Name = "fis2";
             this.fis2.Size = new System.Drawing.Size(185, 44);
             this.fis2.TabIndex = 1;
@@ -541,7 +632,7 @@ namespace CADERNO
             this.fis1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.fis1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fis1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.fis1.Location = new System.Drawing.Point(506, 12);
+            this.fis1.Location = new System.Drawing.Point(12, 12);
             this.fis1.Name = "fis1";
             this.fis1.Size = new System.Drawing.Size(185, 44);
             this.fis1.TabIndex = 0;
@@ -554,10 +645,10 @@ namespace CADERNO
             this.panelqui.Controls.Add(this.qui3);
             this.panelqui.Controls.Add(this.qui2);
             this.panelqui.Controls.Add(this.qui1);
-            this.panelqui.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelqui.Location = new System.Drawing.Point(0, 59);
+            this.panelqui.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelqui.Location = new System.Drawing.Point(2340, 59);
             this.panelqui.Name = "panelqui";
-            this.panelqui.Size = new System.Drawing.Size(1584, 803);
+            this.panelqui.Size = new System.Drawing.Size(585, 823);
             this.panelqui.TabIndex = 7;
             this.panelqui.Visible = false;
             // 
@@ -569,7 +660,7 @@ namespace CADERNO
             this.qui3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.qui3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qui3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.qui3.Location = new System.Drawing.Point(888, 12);
+            this.qui3.Location = new System.Drawing.Point(394, 12);
             this.qui3.Name = "qui3";
             this.qui3.Size = new System.Drawing.Size(185, 44);
             this.qui3.TabIndex = 2;
@@ -584,7 +675,7 @@ namespace CADERNO
             this.qui2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.qui2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qui2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.qui2.Location = new System.Drawing.Point(697, 12);
+            this.qui2.Location = new System.Drawing.Point(203, 12);
             this.qui2.Name = "qui2";
             this.qui2.Size = new System.Drawing.Size(185, 44);
             this.qui2.TabIndex = 1;
@@ -599,7 +690,7 @@ namespace CADERNO
             this.qui1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.qui1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qui1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.qui1.Location = new System.Drawing.Point(506, 12);
+            this.qui1.Location = new System.Drawing.Point(12, 12);
             this.qui1.Name = "qui1";
             this.qui1.Size = new System.Drawing.Size(185, 44);
             this.qui1.TabIndex = 0;
@@ -612,10 +703,10 @@ namespace CADERNO
             this.panelsoc.Controls.Add(this.soc3);
             this.panelsoc.Controls.Add(this.soc2);
             this.panelsoc.Controls.Add(this.soc1);
-            this.panelsoc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelsoc.Location = new System.Drawing.Point(0, 59);
+            this.panelsoc.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelsoc.Location = new System.Drawing.Point(2925, 59);
             this.panelsoc.Name = "panelsoc";
-            this.panelsoc.Size = new System.Drawing.Size(1584, 803);
+            this.panelsoc.Size = new System.Drawing.Size(585, 823);
             this.panelsoc.TabIndex = 8;
             this.panelsoc.Visible = false;
             // 
@@ -627,7 +718,7 @@ namespace CADERNO
             this.soc3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.soc3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.soc3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.soc3.Location = new System.Drawing.Point(888, 12);
+            this.soc3.Location = new System.Drawing.Point(394, 12);
             this.soc3.Name = "soc3";
             this.soc3.Size = new System.Drawing.Size(185, 44);
             this.soc3.TabIndex = 2;
@@ -642,7 +733,7 @@ namespace CADERNO
             this.soc2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.soc2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.soc2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.soc2.Location = new System.Drawing.Point(697, 12);
+            this.soc2.Location = new System.Drawing.Point(203, 12);
             this.soc2.Name = "soc2";
             this.soc2.Size = new System.Drawing.Size(185, 44);
             this.soc2.TabIndex = 1;
@@ -657,7 +748,7 @@ namespace CADERNO
             this.soc1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.soc1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.soc1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.soc1.Location = new System.Drawing.Point(506, 12);
+            this.soc1.Location = new System.Drawing.Point(12, 12);
             this.soc1.Name = "soc1";
             this.soc1.Size = new System.Drawing.Size(185, 44);
             this.soc1.TabIndex = 0;
@@ -670,10 +761,10 @@ namespace CADERNO
             this.panelfil.Controls.Add(this.fil3);
             this.panelfil.Controls.Add(this.fil2);
             this.panelfil.Controls.Add(this.fil1);
-            this.panelfil.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelfil.Location = new System.Drawing.Point(0, 59);
+            this.panelfil.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelfil.Location = new System.Drawing.Point(3510, 59);
             this.panelfil.Name = "panelfil";
-            this.panelfil.Size = new System.Drawing.Size(1584, 803);
+            this.panelfil.Size = new System.Drawing.Size(585, 823);
             this.panelfil.TabIndex = 9;
             this.panelfil.Visible = false;
             // 
@@ -685,7 +776,7 @@ namespace CADERNO
             this.fil3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.fil3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fil3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.fil3.Location = new System.Drawing.Point(888, 12);
+            this.fil3.Location = new System.Drawing.Point(394, 12);
             this.fil3.Name = "fil3";
             this.fil3.Size = new System.Drawing.Size(185, 44);
             this.fil3.TabIndex = 2;
@@ -700,7 +791,7 @@ namespace CADERNO
             this.fil2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.fil2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fil2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.fil2.Location = new System.Drawing.Point(697, 12);
+            this.fil2.Location = new System.Drawing.Point(203, 12);
             this.fil2.Name = "fil2";
             this.fil2.Size = new System.Drawing.Size(185, 44);
             this.fil2.TabIndex = 1;
@@ -715,7 +806,7 @@ namespace CADERNO
             this.fil1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.fil1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fil1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.fil1.Location = new System.Drawing.Point(506, 12);
+            this.fil1.Location = new System.Drawing.Point(12, 12);
             this.fil1.Name = "fil1";
             this.fil1.Size = new System.Drawing.Size(185, 44);
             this.fil1.TabIndex = 0;
@@ -728,10 +819,10 @@ namespace CADERNO
             this.panelbio.Controls.Add(this.bio3);
             this.panelbio.Controls.Add(this.bio2);
             this.panelbio.Controls.Add(this.bio1);
-            this.panelbio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelbio.Location = new System.Drawing.Point(0, 59);
+            this.panelbio.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelbio.Location = new System.Drawing.Point(4095, 59);
             this.panelbio.Name = "panelbio";
-            this.panelbio.Size = new System.Drawing.Size(1584, 803);
+            this.panelbio.Size = new System.Drawing.Size(585, 823);
             this.panelbio.TabIndex = 10;
             this.panelbio.Visible = false;
             // 
@@ -743,7 +834,7 @@ namespace CADERNO
             this.bio3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bio3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bio3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.bio3.Location = new System.Drawing.Point(888, 12);
+            this.bio3.Location = new System.Drawing.Point(394, 12);
             this.bio3.Name = "bio3";
             this.bio3.Size = new System.Drawing.Size(185, 44);
             this.bio3.TabIndex = 2;
@@ -758,7 +849,7 @@ namespace CADERNO
             this.bio2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bio2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bio2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.bio2.Location = new System.Drawing.Point(697, 12);
+            this.bio2.Location = new System.Drawing.Point(203, 12);
             this.bio2.Name = "bio2";
             this.bio2.Size = new System.Drawing.Size(185, 44);
             this.bio2.TabIndex = 1;
@@ -773,7 +864,7 @@ namespace CADERNO
             this.bio1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bio1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bio1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.bio1.Location = new System.Drawing.Point(506, 12);
+            this.bio1.Location = new System.Drawing.Point(12, 12);
             this.bio1.Name = "bio1";
             this.bio1.Size = new System.Drawing.Size(185, 44);
             this.bio1.TabIndex = 0;
@@ -786,10 +877,10 @@ namespace CADERNO
             this.paneledf.Controls.Add(this.edf3);
             this.paneledf.Controls.Add(this.edf2);
             this.paneledf.Controls.Add(this.edf1);
-            this.paneledf.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.paneledf.Location = new System.Drawing.Point(0, 59);
+            this.paneledf.Dock = System.Windows.Forms.DockStyle.Left;
+            this.paneledf.Location = new System.Drawing.Point(4680, 59);
             this.paneledf.Name = "paneledf";
-            this.paneledf.Size = new System.Drawing.Size(1584, 803);
+            this.paneledf.Size = new System.Drawing.Size(585, 823);
             this.paneledf.TabIndex = 11;
             this.paneledf.Visible = false;
             // 
@@ -801,7 +892,7 @@ namespace CADERNO
             this.edf3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.edf3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edf3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.edf3.Location = new System.Drawing.Point(888, 12);
+            this.edf3.Location = new System.Drawing.Point(394, 12);
             this.edf3.Name = "edf3";
             this.edf3.Size = new System.Drawing.Size(185, 44);
             this.edf3.TabIndex = 2;
@@ -816,7 +907,7 @@ namespace CADERNO
             this.edf2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.edf2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edf2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.edf2.Location = new System.Drawing.Point(697, 12);
+            this.edf2.Location = new System.Drawing.Point(203, 12);
             this.edf2.Name = "edf2";
             this.edf2.Size = new System.Drawing.Size(185, 44);
             this.edf2.TabIndex = 1;
@@ -831,7 +922,7 @@ namespace CADERNO
             this.edf1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.edf1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edf1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.edf1.Location = new System.Drawing.Point(506, 12);
+            this.edf1.Location = new System.Drawing.Point(12, 12);
             this.edf1.Name = "edf1";
             this.edf1.Size = new System.Drawing.Size(185, 44);
             this.edf1.TabIndex = 0;
@@ -844,10 +935,10 @@ namespace CADERNO
             this.panelhis.Controls.Add(this.his3);
             this.panelhis.Controls.Add(this.his2);
             this.panelhis.Controls.Add(this.his1);
-            this.panelhis.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelhis.Location = new System.Drawing.Point(0, 59);
+            this.panelhis.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelhis.Location = new System.Drawing.Point(5265, 59);
             this.panelhis.Name = "panelhis";
-            this.panelhis.Size = new System.Drawing.Size(1584, 803);
+            this.panelhis.Size = new System.Drawing.Size(585, 823);
             this.panelhis.TabIndex = 12;
             this.panelhis.Visible = false;
             // 
@@ -859,7 +950,7 @@ namespace CADERNO
             this.his3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.his3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.his3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.his3.Location = new System.Drawing.Point(888, 12);
+            this.his3.Location = new System.Drawing.Point(394, 12);
             this.his3.Name = "his3";
             this.his3.Size = new System.Drawing.Size(185, 44);
             this.his3.TabIndex = 2;
@@ -874,7 +965,7 @@ namespace CADERNO
             this.his2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.his2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.his2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.his2.Location = new System.Drawing.Point(697, 12);
+            this.his2.Location = new System.Drawing.Point(203, 12);
             this.his2.Name = "his2";
             this.his2.Size = new System.Drawing.Size(185, 44);
             this.his2.TabIndex = 1;
@@ -889,7 +980,7 @@ namespace CADERNO
             this.his1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.his1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.his1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.his1.Location = new System.Drawing.Point(506, 12);
+            this.his1.Location = new System.Drawing.Point(12, 12);
             this.his1.Name = "his1";
             this.his1.Size = new System.Drawing.Size(185, 44);
             this.his1.TabIndex = 0;
@@ -902,10 +993,10 @@ namespace CADERNO
             this.panelgeo.Controls.Add(this.geo3);
             this.panelgeo.Controls.Add(this.geo2);
             this.panelgeo.Controls.Add(this.geo1);
-            this.panelgeo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelgeo.Location = new System.Drawing.Point(0, 59);
+            this.panelgeo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelgeo.Location = new System.Drawing.Point(5850, 59);
             this.panelgeo.Name = "panelgeo";
-            this.panelgeo.Size = new System.Drawing.Size(1584, 803);
+            this.panelgeo.Size = new System.Drawing.Size(585, 823);
             this.panelgeo.TabIndex = 13;
             this.panelgeo.Visible = false;
             // 
@@ -917,7 +1008,7 @@ namespace CADERNO
             this.geo3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.geo3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.geo3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.geo3.Location = new System.Drawing.Point(888, 12);
+            this.geo3.Location = new System.Drawing.Point(394, 12);
             this.geo3.Name = "geo3";
             this.geo3.Size = new System.Drawing.Size(185, 44);
             this.geo3.TabIndex = 2;
@@ -932,7 +1023,7 @@ namespace CADERNO
             this.geo2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.geo2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.geo2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.geo2.Location = new System.Drawing.Point(697, 12);
+            this.geo2.Location = new System.Drawing.Point(203, 12);
             this.geo2.Name = "geo2";
             this.geo2.Size = new System.Drawing.Size(185, 44);
             this.geo2.TabIndex = 1;
@@ -947,7 +1038,7 @@ namespace CADERNO
             this.geo1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.geo1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.geo1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.geo1.Location = new System.Drawing.Point(506, 12);
+            this.geo1.Location = new System.Drawing.Point(12, 12);
             this.geo1.Name = "geo1";
             this.geo1.Size = new System.Drawing.Size(185, 44);
             this.geo1.TabIndex = 0;
@@ -960,10 +1051,10 @@ namespace CADERNO
             this.paneldes.Controls.Add(this.des3);
             this.paneldes.Controls.Add(this.des2);
             this.paneldes.Controls.Add(this.des1);
-            this.paneldes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.paneldes.Location = new System.Drawing.Point(0, 59);
+            this.paneldes.Dock = System.Windows.Forms.DockStyle.Left;
+            this.paneldes.Location = new System.Drawing.Point(6435, 59);
             this.paneldes.Name = "paneldes";
-            this.paneldes.Size = new System.Drawing.Size(1584, 803);
+            this.paneldes.Size = new System.Drawing.Size(585, 823);
             this.paneldes.TabIndex = 14;
             this.paneldes.Visible = false;
             // 
@@ -975,7 +1066,7 @@ namespace CADERNO
             this.des3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.des3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.des3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.des3.Location = new System.Drawing.Point(887, 12);
+            this.des3.Location = new System.Drawing.Point(387, 12);
             this.des3.Name = "des3";
             this.des3.Size = new System.Drawing.Size(185, 44);
             this.des3.TabIndex = 2;
@@ -990,7 +1081,7 @@ namespace CADERNO
             this.des2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.des2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.des2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.des2.Location = new System.Drawing.Point(696, 12);
+            this.des2.Location = new System.Drawing.Point(196, 12);
             this.des2.Name = "des2";
             this.des2.Size = new System.Drawing.Size(185, 44);
             this.des2.TabIndex = 1;
@@ -1005,7 +1096,7 @@ namespace CADERNO
             this.des1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.des1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.des1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.des1.Location = new System.Drawing.Point(505, 12);
+            this.des1.Location = new System.Drawing.Point(5, 12);
             this.des1.Name = "des1";
             this.des1.Size = new System.Drawing.Size(185, 44);
             this.des1.TabIndex = 0;
@@ -1017,7 +1108,8 @@ namespace CADERNO
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1584, 862);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1604, 882);
             this.Controls.Add(this.paneldes);
             this.Controls.Add(this.panelgeo);
             this.Controls.Add(this.panelhis);
@@ -1035,12 +1127,15 @@ namespace CADERNO
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "principal";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "MENU PRINCIPAL";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.principal_Load);
             this.menuPrincipal.ResumeLayout(false);
             this.menuPrincipal.PerformLayout();
             this.panelmat.ResumeLayout(false);
+            this.panelmat1.ResumeLayout(false);
+            this.panelmat2.ResumeLayout(false);
             this.paneling.ResumeLayout(false);
             this.panelpor.ResumeLayout(false);
             this.panelfis.ResumeLayout(false);
@@ -1127,5 +1222,11 @@ namespace CADERNO
         private System.Windows.Forms.Button des3;
         private System.Windows.Forms.Button des2;
         private System.Windows.Forms.Button des1;
+        private Button FEXPONENCIAL;
+        private Button ESTATISTICA;
+        private Panel panelmat2;
+        private Panel panelmat1;
+        private Button RAIO;
+        private Button CIRCUNFERENCIA;
     }
 }
