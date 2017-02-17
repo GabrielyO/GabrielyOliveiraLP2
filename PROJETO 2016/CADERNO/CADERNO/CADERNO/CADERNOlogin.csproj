@@ -48,8 +48,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aluno.cs" />
     <Compile Include="Autenticacao.cs" />
+    <Compile Include="cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastro.Designer.cs">
+      <DependentUpon>cadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexao.cs" />
+    <Compile Include="deletarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletarUsuario.Designer.cs">
+      <DependentUpon>deletarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Imagens.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -69,6 +82,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="cadastro.resx">
+      <DependentUpon>cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletarUsuario.resx">
+      <DependentUpon>deletarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Imagens.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Imagens.Designer.cs</LastGenOutput>

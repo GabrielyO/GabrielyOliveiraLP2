@@ -66,5 +66,25 @@ namespace CADERNO
             }
 
         }
+
+        private void CADASTRAR_Click(object sender, EventArgs e)
+        {
+            cadastro cadastro = new cadastro();
+            this.Visible = false;
+            cadastro.ShowDialog();
+        }
+
+        private void DELUSER_Click(object sender, EventArgs e)
+        {
+            deletarUsuario deletar = new deletarUsuario();
+            this.Visible = false;
+            deletar.ShowDialog();
+        }
+
+        private void FECHARPROGRAMA_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+                 
     }
 }
