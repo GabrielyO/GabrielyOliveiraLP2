@@ -20,10 +20,15 @@ namespace CADERNO
 
         private void CADASTRARALUNO_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             int chamada = 10;
             bool existe = false;
 
     
+=======
+            int chamada;
+            bool existe = false;
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
             chamada = Convert.ToInt32(NCHAMADACADASTRO.Text);
             List<Aluno> alunos = new List<Aluno>();
 
@@ -61,6 +66,7 @@ namespace CADERNO
             {
                 if (a.id == chamada)
                 {
+<<<<<<< HEAD
                     if (chamada == 0)
                     {
                         MessageBox.Show("Não é possível fazer um cadastro vazio.");
@@ -78,6 +84,12 @@ namespace CADERNO
                         NCHAMADACADASTRO.Clear();
                         break;
                     }                    
+=======
+                    MessageBox.Show("Esse número da chamada já existe.");
+                    existe = true;
+                    NCHAMADACADASTRO.Clear();
+                    break;
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
                 }
             }
 

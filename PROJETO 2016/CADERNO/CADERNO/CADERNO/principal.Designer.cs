@@ -55,12 +55,15 @@ namespace CADERNO
             this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
             this.b1 = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.busca = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BUSCATXT = new System.Windows.Forms.TextBox();
             this.BUSCAR = new System.Windows.Forms.Button();
             this.resultadotxt = new System.Windows.Forms.TextBox();
+=======
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
             this.menuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,10 +87,14 @@ namespace CADERNO
             this.GEOGRAFIA,
             this.DESENHO,
             this.ACESSAROUTRACONTA,
+<<<<<<< HEAD
             this.SAIREFECHAR,
             this.ANO1,
             this.ANO2,
             this.ANO3});
+=======
+            this.SAIREFECHAR});
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
             this.menuPrincipal.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.menuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuPrincipal.Margin = new System.Windows.Forms.Padding(3);
@@ -338,6 +345,7 @@ namespace CADERNO
             this.b1.Size = new System.Drawing.Size(75, 23);
             this.b1.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // listBox1
             // 
             this.listBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
@@ -421,6 +429,8 @@ namespace CADERNO
             this.resultadotxt.Size = new System.Drawing.Size(865, 882);
             this.resultadotxt.TabIndex = 7;
             // 
+=======
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
             // principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -428,6 +438,7 @@ namespace CADERNO
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1604, 882);
+<<<<<<< HEAD
             this.ControlBox = false;
             this.Controls.Add(this.resultadotxt);
             this.Controls.Add(this.BUSCAR);
@@ -435,6 +446,8 @@ namespace CADERNO
             this.Controls.Add(this.label1);
             this.Controls.Add(this.busca);
             this.Controls.Add(this.listBox1);
+=======
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
             this.Controls.Add(this.menuPrincipal);
             this.Font = new System.Drawing.Font("Script MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
@@ -475,6 +488,7 @@ namespace CADERNO
         public ToolStripMenuItem DESENHO;
         public ToolStripMenuItem ACESSAROUTRACONTA;
         public ToolStripMenuItem SAIREFECHAR;
+<<<<<<< HEAD
         private ListBox listBox1;
         private Label busca;
         private Label label1;
@@ -484,5 +498,7 @@ namespace CADERNO
         private ToolStripMenuItem ANO1;
         private ToolStripMenuItem ANO2;
         private ToolStripMenuItem ANO3;
+=======
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
     }
 }

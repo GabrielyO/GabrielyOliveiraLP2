@@ -102,7 +102,10 @@
             this.NCHAMADACADASTRO.Name = "NCHAMADACADASTRO";
             this.NCHAMADACADASTRO.Size = new System.Drawing.Size(92, 31);
             this.NCHAMADACADASTRO.TabIndex = 11;
+<<<<<<< HEAD
             this.NCHAMADACADASTRO.Text = "0";
+=======
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
             // 
             // label2
             // 

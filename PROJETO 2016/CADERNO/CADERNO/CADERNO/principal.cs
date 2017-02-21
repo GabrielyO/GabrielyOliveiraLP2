@@ -53,6 +53,7 @@ namespace CADERNO
 
         private void MATEMÁTICA_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             listBox1.Items.Clear();
             listBox1.Visible = true;
             MySqlCommand cmd = new MySqlCommand()
@@ -74,10 +75,14 @@ namespace CADERNO
 
             //fecha conexão 
             cmd.Connection.Close();
+=======
+
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
         }
 
         private void INGLÊS_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             listBox1.Items.Clear();
             listBox1.Visible = true;
             MySqlCommand cmd = new MySqlCommand()
@@ -99,11 +104,14 @@ namespace CADERNO
 
             //fecha conexão 
             cmd.Connection.Close();
+=======
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
 
         }
 
         private void PORTUGUÊS_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             listBox1.Items.Clear();
             listBox1.Visible = true;
             MySqlCommand cmd = new MySqlCommand()
@@ -125,10 +133,14 @@ namespace CADERNO
 
             //fecha conexão 
             cmd.Connection.Close();
+=======
+
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
         }
 
         private void FÍSICA_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             listBox1.Items.Clear();
             listBox1.Visible = true;
             MySqlCommand cmd = new MySqlCommand()
@@ -150,10 +162,14 @@ namespace CADERNO
 
             //fecha conexão 
             cmd.Connection.Close();
+=======
+
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
         }
 
         private void QUÍMICA_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             listBox1.Items.Clear();
             listBox1.Visible = true;
             MySqlCommand cmd = new MySqlCommand()
@@ -175,10 +191,14 @@ namespace CADERNO
 
             //fecha conexão 
             cmd.Connection.Close();
+=======
+
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
         }
 
         private void SOCIOLOGIA_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             listBox1.Items.Clear();
             listBox1.Visible = true;
             MySqlCommand cmd = new MySqlCommand()
@@ -200,10 +220,14 @@ namespace CADERNO
 
             //fecha conexão 
             cmd.Connection.Close();
+=======
+
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
         }
 
         private void FILOSOFIA_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             listBox1.Items.Clear();
             listBox1.Visible = true;
             MySqlCommand cmd = new MySqlCommand()
@@ -225,10 +249,14 @@ namespace CADERNO
 
             //fecha conexão 
             cmd.Connection.Close();
+=======
+
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
         }
 
         private void BIOLOGIA_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             listBox1.Items.Clear();
             listBox1.Visible = true;
             MySqlCommand cmd = new MySqlCommand()
@@ -250,10 +278,14 @@ namespace CADERNO
 
             //fecha conexão 
             cmd.Connection.Close();
+=======
+
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
         }
 
         private void ED_FÍSICA_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             listBox1.Items.Clear();
             listBox1.Visible = true;
             MySqlCommand cmd = new MySqlCommand()
@@ -275,10 +307,14 @@ namespace CADERNO
 
             //fecha conexão 
             cmd.Connection.Close();
+=======
+
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
         }
 
         private void HISTÓRIA_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             listBox1.Items.Clear();
             listBox1.Visible = true;
             MySqlCommand cmd = new MySqlCommand()
@@ -300,10 +336,14 @@ namespace CADERNO
 
             //fecha conexão 
             cmd.Connection.Close();
+=======
+
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
         }
 
         private void GEOGRAFIA_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             listBox1.Items.Clear();
             listBox1.Visible = true;
             MySqlCommand cmd = new MySqlCommand()
@@ -467,5 +507,15 @@ namespace CADERNO
             //fecha conexão 
             cmd.Connection.Close();
         }
+=======
+
+        }
+
+        private void DESENHO_Click(object sender, EventArgs e)
+        {
+
+        }
+                  
+>>>>>>> 2a1d2057e95ca68ea49dfc8a3c89ca946da29132
     }
 }
